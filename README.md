@@ -36,6 +36,14 @@ Ember.literal
 import literal from 'ember-literal/macros/literal';
 ````
 
+## CDN
+Tagged releases are automatically uploaded to a CDN for light development use. Do not rely on these for production
+
+Examples:
+
+* Globals: https://ember-ui.s3.amazonaws.com/ember-literal/globals/ember-literal-v0.0.1-beta.1.js
+* AMD: https://ember-ui.s3.amazonaws.com/ember-literal/named-amd/ember-literal-v0.0.1-beta.1.amd.js
+
 ## Installation
 
 * `git clone` this repository
