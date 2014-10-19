@@ -10,6 +10,10 @@ install:
 script:
 - npm test
 
+after_success:
+  - ember build --environment=production
+  - "./bin/s3-publish.js"
+
 env:
   global:
   - S3_BUCKET_NAME=ember-cpm-builds
