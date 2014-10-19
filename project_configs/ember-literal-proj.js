@@ -2,7 +2,7 @@
 
 module.exports = function(revision, tag) {
   return {
-    'ember-literal.js':
+    'globals/ember-literal.js':
       { contentType: 'text/javascript',
         destinations: {
           wildcard: [
@@ -12,13 +12,13 @@ module.exports = function(revision, tag) {
           ]
         }
       },
-    'ember-literal.min.js':
+    'named-amd/ember-literal.js':
       { contentType: 'text/javascript',
         destinations: {
           wildcard: [
-            'ember-literal-latest.min.js',
-            'ember-literal-' + tag + '.js',
-            'ember-literal-' + revision + '.min.js'
+            'ember-literal-latest.amd.js',
+            'ember-literal-' + tag + '.amd.js',
+            'ember-literal-' + revision + '.amd.js'
           ]
         }
       }
