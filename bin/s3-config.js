@@ -9,9 +9,9 @@ module.exports = function (revision, tag) {
     'named-amd/ember-literal.js': {
       contentType: 'text/javascript',
       destinations: {
-        wildcard: names.map(function(name) { return 'named-amd/' + name; }),
+        wildcard: names.map(function(name) { return 'ember-literal/named-amd/' + name; }),
         release: [
-          'named-amd/ember-literal-' + tag + 'amd.js'
+          'ember-literal/named-amd/ember-literal-' + tag + '.amd.js'
         ]
       }
     },
@@ -19,9 +19,9 @@ module.exports = function (revision, tag) {
     'globals/ember-literal.js': {
       contentType: 'text/javascript',
       destinations: {
-        wildcard: names.map(function(name) { return 'globals/' + name; }),
+        wildcard: names.map(function(name) { return 'ember-literal/globals/' + name; }),
         release: [
-          'globals/ember-literal-' + tag + '.js'
+          'ember-literal/globals/ember-literal-' + tag + '.js'
         ]
       }
     }
