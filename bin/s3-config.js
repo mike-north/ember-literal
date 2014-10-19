@@ -9,14 +9,14 @@ module.exports = function (revision, tag) {
     'named-amd/ember-literal.js': {
       contentType: 'text/javascript',
       destinations: {
-        canary: names.map(function(name) { return 'named-amd/' + name; })
+        wildcard: names.map(function(name) { return 'named-amd/' + name; })
       }
     },
 
     'globals/ember-literal.js': {
       contentType: 'text/javascript',
       destinations: {
-        canary: names.map(function(name) { return 'globals/' + name; })
+        wildcard: names.map(function(name) { return 'globals/' + name; })
       }
     }
   };
