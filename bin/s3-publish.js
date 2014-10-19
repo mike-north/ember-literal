@@ -5,6 +5,6 @@ var configPath = require('path').join(__dirname, './s3-config.js');
 
 var publisher = new S3Publisher({projectConfigPath: configPath});
 publisher.currentBranch = function() {
-  return (process.env.TRAVIS_BRANCH === 'master') ? 'wildcard' : 'no-op';
+  return (process.env.TRAVIS_BRANCH === 'master') ? 'wildcard' : 'release';
 };
 publisher.publish();
