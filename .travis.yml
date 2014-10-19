@@ -13,6 +13,5 @@ script:
 env:
   global:
   - S3_BUCKET_NAME=ember-cpm-builds
-  matrix:
   - secure: dvmE4n5/urjIDnVw1RMoKiCuRXJ6qpFGN+cQ/YNJtTFCQerZF4PzGbDJX+GAeoToab2YzzoqFlxZxF+2x+HWGT2M3b2nRLpDc3UvZRvSwu/FVG/yJHo6fLswx9Q1ZXaA6EQli3Wt4NufTfYOBdYXkMyT+qEHdAPSVsbnKT1NhkA=
   - secure: Gnz0EaBvDfhnzcp2IJ+Jkt17xIuCoDzrEDxa4l0TpTsD3vyxumffbc9ix12XctNoa6bDgKNQljJML0OOFzpVLjMNF2hMTRNJRdIenmA4oHFuxv2FQ2WlaqA6wcBx9BuePCr66jNlxMzxXAYb0C4VBghH1ykzzUj4Po3sDD0Fsn8=
