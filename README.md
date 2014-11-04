@@ -1,5 +1,6 @@
 # ember-literal ![Build Status](https://travis-ci.org/TrueNorth/ember-literal.svg)
 
+
 This README outlines the details of collaborating on this Ember addon.
 
 ## Use
