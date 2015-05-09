@@ -2,13 +2,20 @@ language: node_js
 sudo: false
 cache:
   directories:
-  - node_modules
+    - node_modules
+
+before_install:
+  - "npm config set spin false"
+  - "npm install -g npm@^2"
+
 install:
-- npm install -g bower
-- npm install
-- bower install
+  - npm install -g bower
+  - npm install
+  - bower install
 script:
-- npm test
+  - npm test
+
+
 after_success:
 - ember build --environment=production
 - "./bin/s3-publish.js"
