@@ -1,6 +1,7 @@
 {
   "name": "ember-literal",
   "version": "0.0.1",
+  "description": "literal is a way of disambiguating between literals and property keys when using computed properties",
   "directories": {
     "doc": "doc",
     "test": "tests"
