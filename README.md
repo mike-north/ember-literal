@@ -1,8 +1,8 @@
 # ember-literal 
 
-[![Build Status](https://travis-ci.org/truenorth/ember-literal.svg?branch=master)](https://travis-ci.org/truenorth/ember-literal)
-[![Dependency Status](https://david-dm.org/truenorth/ember-literal.svg)](https://david-dm.org/truenorth/ember-literal)
-[![devDependency Status](https://david-dm.org/truenorth/ember-literal/dev-status.svg)](https://david-dm.org/truenorth/ember-literal#info=devDependencies)
+[![Build Status](https://travis-ci.org/mike-north/ember-literal.svg?branch=master)](https://travis-ci.org/mike-north/ember-literal)
+[![Dependency Status](https://david-dm.org/mike-north/ember-literal.svg)](https://david-dm.org/mike-north/ember-literal)
+[![devDependency Status](https://david-dm.org/mike-north/ember-literal/dev-status.svg)](https://david-dm.org/mike-north/ember-literal#info=devDependencies)
 [![Ember Observer Score](http://emberobserver.com/badges/ember-literal.svg)](http://emberobserver.com/addons/ember-literal)
 
 This README outlines the details of collaborating on this Ember addon.

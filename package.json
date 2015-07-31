@@ -1,6 +1,6 @@
 {
   "name": "ember-literal",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Ember.literal computed property macro",
   "directories": {
     "doc": "doc",
@@ -11,8 +11,8 @@
     "build": "ember build",
     "test": "ember try:testall"
   },
-  "repository": "https://github.com/truenorth/ember-literal.git",
-  "homepage": "https://github.com/truenorth/ember-literal",
+  "repository": "https://github.com/mike-north/ember-literal.git",
+  "homepage": "https://github.com/mike-north/ember-literal",
   "engines": {
     "node": ">= 0.10.0"
   },
