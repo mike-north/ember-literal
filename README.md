@@ -4,6 +4,7 @@
 [![Dependency Status](https://david-dm.org/mike-north/ember-literal.svg)](https://david-dm.org/mike-north/ember-literal)
 [![devDependency Status](https://david-dm.org/mike-north/ember-literal/dev-status.svg)](https://david-dm.org/mike-north/ember-literal#info=devDependencies)
 [![Ember Observer Score](http://emberobserver.com/badges/ember-literal.svg)](http://emberobserver.com/addons/ember-literal)
+[![Code Climate](https://codeclimate.com/github/mike-north/ember-literal/badges/gpa.svg)](https://codeclimate.com/github/mike-north/ember-literal)
 
 This README outlines the details of collaborating on this Ember addon.
 
