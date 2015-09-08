@@ -33,13 +33,13 @@ var MyOtherType = Ember.Object.extend({
 ````
 You can use `literal` in your project two ways
 
-1. Use it via the `Ember` namespace
+1) Use it via the `Ember` namespace
 ````javascript
 Ember.literal
 ````
-2. Import the macro directly
+2) Import the macro directly
 ````javascript
-import literal from 'ember-literal/macros/literal';
+import l from 'ember-literal/macros/literal';
 ````
 
 ## CDN
