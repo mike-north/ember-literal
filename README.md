@@ -63,13 +63,13 @@ Examples:
 
 ## Running Tests
 
+* `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
 * `ember test`
 * `ember test --server`
 
 ## Building
 
 * `ember build`
-
 
 ## Thanks!
 * @hjdavid for documenting [his thoughts on the subject of Ember.literal](https://gist.github.com/hjdivad/8308522)
