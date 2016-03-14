@@ -42,7 +42,7 @@ var typeOf = Ember.typeOf;
 export default function literal (val) {
   var valType = typeOf(val);
   assert(
-    Ember.String.fmt("Illegal Argument: %@ (%@) is a non-literal value", val, valType),
+    `Illegal Argument: ${val} (${valType}) is a non-literal value`,
     ['string', 'null', 'undefined'].indexOf(valType) !== -1
   );
   return computed(function () {
