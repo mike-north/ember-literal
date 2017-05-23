@@ -1,6 +1,6 @@
 {
   "name": "ember-literal",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Ember.literal computed property macro",
   "directories": {
     "doc": "doc",
