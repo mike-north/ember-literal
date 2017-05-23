@@ -1,5 +1,7 @@
 # ember-literal 
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/mike-north/ember-literal.svg)](https://greenkeeper.io/)
+
 [![Build Status](https://travis-ci.org/mike-north/ember-literal.svg?branch=master)](https://travis-ci.org/mike-north/ember-literal)
 [![Dependency Status](https://david-dm.org/mike-north/ember-literal.svg)](https://david-dm.org/mike-north/ember-literal)
 [![devDependency Status](https://david-dm.org/mike-north/ember-literal/dev-status.svg)](https://david-dm.org/mike-north/ember-literal#info=devDependencies)

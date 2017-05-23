@@ -1,20 +1,10 @@
-import Ember from 'ember';
-import literal from 'ember-literal/macros/literal';
-import startApp from '../helpers/start-app';
-import { module, test } from 'qunit';
+import { test } from 'qunit';
+import moduleForAcceptance from '../../tests/helpers/module-for-acceptance';
+import l from 'ember-literal/macros/literal';
 
-var App;
-
-module('Acceptance: EmberLiteralInstaller', {
-  setup: function() {
-    App = startApp();
-  },
-  teardown: function() {
-    Ember.run(App, 'destroy');
-  }
-});
+moduleForAcceptance('Acceptance: EmberLiteralInstaller');
 
 test('Verifying installation onto Ember.literal', function(assert) {
   visit('/');
-  assert.deepEqual(Ember.literal, literal, 'literal has been installed onto the Ember namespace');
+  assert.equal(l, window.Ember.literal, 'literal has been installed onto the Ember namespace');
 });
