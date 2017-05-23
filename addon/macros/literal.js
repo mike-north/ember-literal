@@ -1,8 +1,6 @@
 import Ember from 'ember';
 
-var assert = Ember.assert;
-var computed = Ember.computed;
-var typeOf = Ember.typeOf;
+const { assert, computed, typeOf } = Ember;
 
 /**
  * Returns a literal value. Useful for disambiguating
@@ -37,16 +35,17 @@ var typeOf = Ember.typeOf;
  *
  * })
  * ```
+ * @public
  */
 
-export default function literal (val) {
-  var valType = typeOf(val);
+export default function literal(val) {
+  let valType = typeOf(val);
   assert(
     `Illegal Argument: ${val} (${valType}) is a non-literal value`,
     ['string', 'null', 'undefined'].indexOf(valType) !== -1
   );
-  return computed(function () {
-      return val;
+  return computed(function() {
+    return val;
   }).readOnly();
 
 }

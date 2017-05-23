@@ -2,46 +2,48 @@ import Ember from 'ember';
 import l from 'ember-literal/macros/literal';
 import { module, test } from 'qunit';
 
-var MyType = Ember.Object.extend({
+const { Object: EObj, computed } = Ember;
+
+let MyType = EObj.extend({
   literalProp: l('val'),
   noArg: l(),
   nullArg: l(null)
 });
 
-var myObj;
+let myObj;
 
 module('literal', {
-  setup: function () {
+  beforeEach() {
     myObj = MyType.create({
       val: '6'
     });
   }
 });
 
-test('Property key (should return the key its self)', function (assert) {
+test('Property key (should return the key its self)', function(assert) {
   assert.strictEqual(myObj.get('literalProp'), 'val');
 });
 
-test('No argument case', function (assert) {
+test('No argument case', function(assert) {
   assert.strictEqual(myObj.get('noArg'), undefined);
 });
 
-test('Null argument case', function (assert) {
+test('Null argument case', function(assert) {
   assert.strictEqual(myObj.get('nullArg'), null);
 });
 
-test('Numeric argument case', function (assert) {
-  assert.throws(function () {
-    Ember.Object.extend({
+test('Numeric argument case', function(assert) {
+  assert.throws(function() {
+    EObj.extend({
       val: l(6)
     });
-  }, "Illegal Argument");
+  }, 'Illegal Argument');
 });
 
-test('Nested computed property argument case', function (assert) {
-  assert.throws(function () {
-    Ember.Object.extend({
-      val: l(Ember.computed.alias('abc'))
+test('Nested computed property argument case', function(assert) {
+  assert.throws(function() {
+    EObj.extend({
+      val: l(computed.alias('abc'))
     });
-  }, "Illegal Argument");
+  }, 'Illegal Argument');
 });
